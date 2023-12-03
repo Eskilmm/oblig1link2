@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html  lang="no">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kledeli - Forside</title>  
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>   
+    <header>  
+      <div style="text-align: center;">
+        <a href="Forside.html">
+          <img src="https://i.gyazo.com/c30d706b39b5a8e922685bce172bd992.png" alt="FORSIDE" style="width:180px;height:120px;">
+        </a>
+        <div class="topnav">
+          <a href="./Omoss.html">OM OSS</a>
+          <a href="./AboOversikt.html">ABONNEMENT</a>
+          <a href="./ProduktOversikt.html">PRODUKTER</a>
+          <a href="./Navigering.html">HENTING/LEVERING</a>
+          <a href="./login.html">LOGIN</a>
+        </div>
+      </div>
+    </header>  
+
+    <div class = "registrer">
+
+      <h1> Ikke medlem? Registrer deg her</h1>
+      <form class = "registrer-form">
+        <label><input type="text" class="input-box" id="inputNavn" placeholder="Fornavn">Fornavn*</label>
+        <label><input type="text" class="input-box" id="inputEtternavn" placeholder="Etternavn">Etternavn*</label>
+        <label><input type="number" class="input-box" id="fødselsdatoInput" placeholder="DD-MM-ÅÅÅÅ">Fødselsdato*</label>
+        <label><input type="text" class="input-box" id="adresseInput" placeholder="Adresse">Adresse*</label>
+        <label><input type="number" class="input-box" id="nummerInput" placeholder="NO(+47)">Mobil</label>
+        <label><input type="email" class="input-box" id="e-postInput" placeholder="E-post">E-post (brukernavn)*</label>
+        <label><input type="password" class="input-box" id="passwordInput" placeholder="Passord">Passord*</label>
+        <label><input type="password" class="input-box" id="confirmPasswordInput" placeholder="Passord">Bekreft passord*</label>
+
+        <!--Ligge inn felt som bestemmer kjønn?-->
+
+        <!--Ligge inn flere adressemuligheter (postnummer)(by) -->
+
+
+        <!--Muligens ligge inn noen flere felter om hvem det er som registrerer seg (hvor hyppig de tror de kommer
+        å benytte våre tjenester osv.)-->
+
+        <!--Kanskjer ligge inn foretrukket by for leveranse av klær
+        (Bergen, Haugesund eller Førde)-->
+
+
+
+
+        <label> Hvorfor ønsker du å registrere deg hos oss i Kledeli? *
+        <textarea rows = "6" class = "input-box" id="userNotesInput" placeholder= "Skriv her" required style = "resize: none;"></textarea>
+        </label>
+
+        <label><span><input type="checkbox" id="vilkaarCheckbox"></span>Jeg godtar vilkår for bruk</label>
+        <label><span><input type="checkbox" id="nyhetsbrevCheckbox"></span>Jeg ønsker å motta nyheter, tips og markedstilbud fra Kledeli på sms og mail</label>
+        <label><input type = "submit" class = "input-box" id="registrerButtom" value = "Registrer">Registrer</label>
+      </form>
+    </div>
+  </body>   
+</html>  

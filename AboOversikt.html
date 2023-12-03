@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no"><head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">  
+    <title>Kledeli - Abonnement</title>
+</head>
+<body>
+    
+    <div style="text-align: center;">
+        <a href="Forside.html">
+            <img src="https://i.gyazo.com/c30d706b39b5a8e922685bce172bd992.png" alt="FORSIDE" style="width:180px;height:120px;">
+        </a>
+    </div>
+    <div class="topnav">
+        <a href="./Omoss.html">OM OSS</a>
+        <a class="active" href="./AboOversikt.html">ABONNEMENT</a>
+        <a href="./ProduktOversikt.html">PRODUKTER</a>
+        <a href="./Navigering.html">HENTING/LEVERING</a>
+        <a href="./login.html">LOGIN</a>
+    </div> 
+    <main>
+        <h1 >Finn ditt abonnement</h1>
+        <h2><strong>KLEDELIG</strong> tilbyr mange forskjellige abonnementer. Finn det som passer deg best her!</h2>
+        <div style="text-align: center;">
+            <label>Velg antal plagg du vil låne:
+                <select id="dd1">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                </select>
+            </label>
+            <button type="button" onclick="changeText(dd1.value)">Velg</button>
+        </div>
+            
+        
+        <div style="text-align: center;">
+            <ul>
+                <li id="li1">3 plagg:
+                    <ul>
+                        <li>tilgang til 3 utvalgte plagg i opp til 3 måneder.</li>
+                        <li>Pris: Kr. 500,- pr. mnd.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Registrer deg <a href="./registrer.html">her!</a>!</p>
+            <script>
+                function changeText(x){
+                    if(x == 3){
+                        document.getElementById("li1").innerHTML = "3 plagg:<ul><li>tilgang til 3 utvalgte plagg i opp til 3 måneder.</li><li>Pris: Kr. 500,- pr. mnd.</li></ul>";
+                        return;
+                    }
+                    if(x == 5){
+                        document.getElementById("li1").innerHTML = "5 plagg:<ul><li>Fri tilgang til 5 utvalgte plagg i opp til 3 måneder.</li><li>Pris: Kr. 700,- pr. mnd.</li></ul>";
+                        return;
+                    }
+                    if(x == 8){
+                        document.getElementById("li1").innerHTML = "8-Plagg:<ul><li>Fri tilgang til 8 utvalgte plagg i opp til 3 måneder.</li><li>Pris: Kr. 900,- pr. mnd.</li></ul>";
+                        return;
+                    }
+                    if(x == 10){
+                        document.getElementById("li1").innerHTML = "10-Plagg:<ul><li>Fri tilgang til 10 utvalgte plagg i opp til 3 måneder.</li><li>Pris: Kr. 1 200,- pr. mnd.</li></ul>";
+                        return;
+                    }
+                }
+            </script>
+        </div>
+    </main>
+
+</body></html>
